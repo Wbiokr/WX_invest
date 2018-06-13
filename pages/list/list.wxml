@@ -1,0 +1,8 @@
+<view>
+  <view class="top">
+    
+  </view>
+  <scroll-view scroll-y>
+    
+  </scroll-view>
+</view>

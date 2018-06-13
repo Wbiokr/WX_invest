@@ -1,0 +1,52 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/register/register",
+    "pages/list/list",
+    "pages/add/add",
+    "pages/wallet/wallet"
+  ],
+  "tabBar": {
+    "backgroundColor": "#fefefe",
+    "borderStyle": "black",
+    "color": "#666",
+    "selectedColor": "#6799e4",
+    "position":"bottom",
+    "list": [
+      {
+        "pagePath": "pages/list/list",
+        "text": "list",
+        "iconPath":"imgs/list_g.png",
+        "selectedIconPath":"imgs/list.png"
+      },
+      {
+        "pagePath": "pages/add/add",
+        "text": "add",
+        "iconPath": "imgs/add_g.png",
+        "selectedIconPath": "imgs/add.png"
+      },
+      {
+        "pagePath": "pages/wallet/wallet",
+        "text": "my",
+        "iconPath": "imgs/wallet_g.png",
+        "selectedIconPath": "imgs/wallet.png"
+      }
+    ]
+  },
+  "window": {
+    "navigationBarBackgroundColor":"#ff3333",
+    "navigationBarTitleText": "invest",
+    "navigationBarTextStyle": "white",
+    "navigationStyle":"default",
+    "backgroundColor": "#efefef",
+    "backgroundTextStyle": "dark",
+    "enablePullDownRefresh": false
+  },
+  "networkTimeout": {
+    "request": 20000,
+    "connectSocket": 20000,
+    "uploadFile": 20000,
+    "downloadFile": 20000
+  },
+  "debug":false
+}

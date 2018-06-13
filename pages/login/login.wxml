@@ -1,0 +1,40 @@
+<view>
+  <form bindsubmit='login' class='login-form'>
+    <label>
+      <input 
+        placeholder='username'
+        type='text'
+        maxlength='10'
+        value=''
+        confirm-type='next'
+        adjust-position='{{true}}'
+        bindinput='updateUsername'
+      />
+    </label>
+    <label>
+      <input 
+        password
+        placeholder='password'
+        type='text'
+        maxlength='12'
+        value=''
+        confirm-type='done'
+        adjust-position='{{true}}'
+        bindinput='updatePassword'
+      />
+    </label>
+    <label>
+      <button
+        class='dur' 
+        size='default'
+        form-type='submit'  
+        type='default'
+        loading='{{false}}'
+        plain='{{false}}'
+        disabled='{{isLoading}}'
+        hover-class="btn-hv"
+        open-type='getUserInfo'
+      >   提   叫</button>
+    </label>
+  </form>
+</view>
