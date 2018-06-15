@@ -1,40 +1,15 @@
 <view>
   <form bindsubmit='login' class='login-form'>
-    <label>
-      <input 
-        placeholder='username'
-        type='text'
-        maxlength='10'
-        value=''
-        confirm-type='next'
-        adjust-position='{{true}}'
-        bindinput='updateUsername'
-      />
-    </label>
-    <label>
-      <input 
-        password
-        placeholder='password'
-        type='text'
-        maxlength='12'
-        value=''
-        confirm-type='done'
-        adjust-position='{{true}}'
-        bindinput='updatePassword'
-      />
-    </label>
-    <label>
-      <button
-        class='dur' 
-        size='default'
-        form-type='submit'  
-        type='default'
-        loading='{{false}}'
-        plain='{{false}}'
-        disabled='{{isLoading}}'
-        hover-class="btn-hv"
-        open-type='getUserInfo'
-      >   提   叫</button>
-    </label>
+    <i-panel title='登录信息'>
+      <i-input title='账户' placeholder='请输入账户' bind:change='updateUsername'/>
+      <i-input title='密码' type='password' placeholder='请输入密码' bind:change='updatePassword'/>
+    </i-panel>
+
+    <i-button 
+      type='primary'
+      loading='{{false}}'
+      disabled='{{true}}'
+      bind:click='login'
+    >提 交</i-button>
   </form>
 </view>

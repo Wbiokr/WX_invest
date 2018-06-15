@@ -7,7 +7,11 @@ Page({
    * 页面的初始数据
    */
   data: {
-    list: [],
+    list: [
+      {
+         
+      },{},{},{},{}
+    ],
     page:1,
     size:6,
     isLoading:false,
@@ -68,17 +72,17 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    wx.setNavigationBarTitle({title:'loading'})
-    wx.showNavigationBarLoading()
-    wx.showLoading({
-      title:'请求数据中...'
-    })
+    // wx.setNavigationBarTitle({title:'loading'})
+    // wx.showNavigationBarLoading()
+    // wx.showLoading({
+    //   title:'请求数据中...'
+    // })
     
-    this.getCashList(()=>{
-      wx.hideNavigationBarLoading();
-      wx.hideLoading();
-      wx.setNavigationBarTitle({title:'list'})
-    })
+    // this.getCashList(()=>{
+    //   wx.hideNavigationBarLoading();
+    //   wx.hideLoading();
+    //   wx.setNavigationBarTitle({title:'list'})
+    // })
   },
 
   /**
@@ -134,7 +138,7 @@ Page({
    * 页面上拉触底事件的处理函数
    */
   onReachBottom: function () {
-    this.lower()
+    // this.lower()
   },
 
   lower(){

@@ -8,11 +8,11 @@
   
 }
 .login-form input{
-  margin-top:30px;
+  /* margin-top:30px;
   border-bottom: 1px solid #ddd;
   padding:0 30rpx 10rpx;
-  font-size:30rpx;
+  font-size:30rpx; */
 }
 .login-form button{
-  margin-top:-1px;
+  /* margin-top:-1px; */
 }
