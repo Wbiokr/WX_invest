@@ -3,6 +3,9 @@
   "usingComponents":{
     "i-input":"../../dist/input/index",
     "i-panel":"../../dist/panel/index",
-    "i-button":"../../dist/button/index"
+    "i-button":"../../dist/button/index",
+    "i-message":"../../dist/message/index",
+    "i-toast":"../../dist/toast/index",
+    "i-action-sheet":"../../dist/action-sheet/index"
   }
 }
