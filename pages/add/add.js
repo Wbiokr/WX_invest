@@ -1,23 +1,83 @@
-// pages/invest/add.js
-Component({
-  /**
-   * 组件的属性列表
-   */
-  properties: {
-
+Page({
+  data:{
+    name:'',
+    cash:'',
+    rateAll:'',
+    rateHas:'',
+    startTime:'',
+    duration:'',
+    phone:'',
+    card:'',
+    arrPhone:[
+      {name:'8960',color:'#1aad19'},
+      {name:'2939',color:'#1aad19'},
+    ],
+    arrCard:[
+      {name:'8733',color:'#1aad19'},
+      {name:'5728',color:'#1aad19'},
+    ],
+    visiblePhone:false,
+    visibleCard:false,
+    isLoading:false,
   },
-
-  /**
-   * 组件的初始数据
-   */
-  data: {
-
+  changeName(e){
+    console.log(e)
+    this.setData({
+      name:e.detail.detail.value
+    })
   },
-
-  /**
-   * 组件的方法列表
-   */
-  methods: {
-
+  changeCash(e){
+    this.setData({
+      cash:e.detail.detail.value
+    })
+  },
+  changeRateAll(e){
+    console.log(e)
+    this.setData({
+      rateAll:e.detail.detail.value
+    })
+  },
+  changeRateHas(e){
+    this.setData({
+      rateHas:e.detail.detail.value
+    })
+  },
+  changeDur(e){
+    this.setData({
+      duration:e.detail.value,
+    })
+  },
+  changeDate(e){
+    this.setData({
+      startTime:e.detail.value
+    })
+  },
+  selectPhone(e){
+    this.setData({
+      phone:this.data.arrPhone[e.detail.index].name,
+      visiblePhone:false,
+    })
+  },
+  selectCard(e){
+    this.setData({
+      card:this.data.arrCard[e.detail.index].name,
+      visibleCard:false,
+    })
+  },
+  togglePhone(){
+    this.setData({
+      visiblePhone:true
+    })
+  },
+  toggleCard(){
+    this.setData({
+      visibleCard:true
+    })
+  },
+  cancel(e){
+    const key=e.target.id;
+    this.setData({
+      [key]:false
+    })
   }
 })

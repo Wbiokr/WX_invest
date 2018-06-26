@@ -1,1 +1,11 @@
 /* pages/invest/add.wxss */
+.slider{
+  display:flex;
+  align-items: center;
+}
+.slider i-input{
+  width: 75px;
+}
+.slider slider{
+  flex:1;
+}

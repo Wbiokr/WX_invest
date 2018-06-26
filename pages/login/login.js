@@ -5,7 +5,7 @@ Page({
     username:'',
     password:'',
     isLoading:false,
-    visible:true,
+    visible:false,
     actions:[
       {
         name:"列表",
@@ -17,6 +17,7 @@ Page({
       }
     ]
   },
+  
   cancel(){
     this.setData({
       visible:false,
@@ -103,6 +104,8 @@ Page({
         })
         return ;
       }
+
+      this.setData({visible:true})
 
       // wx.showModal({
       //   title:'登录成功',

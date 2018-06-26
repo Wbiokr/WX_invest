@@ -1,2 +1,30 @@
-<!--pages/invest/add.wxml-->
-<text>pages/invest/add.wxml</text>
+<view>
+  <i-panel title="平台信息">
+    <i-input value="{{ name }}" title="平台名称" autofocus placeholder="请输入平台名称" maxlength='{{100}}' type='text' bind:change='changeName'/>
+    <i-input value="{{ cash }}" title="本金额"  placeholder="投资本金数额" maxlength='{{100}}' type='number' bind:change='changeCash'/>
+    <i-input value="{{ rateAll }}" title="总撸毛"  placeholder="撸毛总额" maxlength='{{100}}' type='number' bind:change='changeRateAll'/>
+    <i-input value="{{ rateHas }}" title="返现"  placeholder="羊头返现" maxlength='{{100}}' type='number' bind:change='changeRateHas'/>
+    <picker mode='date' value='{{startTime}}' start='2016-01-01' end='2022-01-01' bindchange='changeDate' >
+
+      <i-input value="{{ startTime }}" title="开始时间"  placeholder="投资时间" maxlength='{{100}}' type='text' disabled/>
+
+    </picker>
+    <view class="slider">
+
+      <i-input value="{{ duration }}" title="周期" />
+      <!-- div -->
+      <slider min='1' max='100' step='1' value='30' backgroundColor='#ccc' activeColor='#1aad19' block-size='18' show-value='{{true}}' block-color='#1daa19' bindchange='changeDur' />
+    </view>
+  </i-panel>
+
+  <i-panel title='账号信息'>
+    <i-input value='{{phone}}' title='手机' placeholder='点击选择手机尾号' type='text' disabled  bindtap='togglePhone' />
+
+    <i-input value='{{card}}' title='身份证' placeholder='点击选择身份证尾号' type='text' disabled mask-closable='{{true}}' bindtap='toggleCard'/>
+  </i-panel>
+
+  <i-button type='primary' size='small' loading='{{isLoading}}' bind:click='addInvestItem'>提   交</i-button>
+
+  <i-action-sheet id='visiblePhone' color='#1aad19' visible='{{ visiblePhone }}' actions='{{ arrPhone }}' show-cancel mask-closable='{{true}}' bind:click='selectPhone'  bind:cancel='cancel'/>
+  <i-action-sheet id='visibleCard' color='#1aad19' visible='{{ visibleCard }}' actions='{{ arrCard }}' show-cancel mask-closable='{{true}}' bind:click='selectCard' bind:cancel='cancel'/>
+</view>
