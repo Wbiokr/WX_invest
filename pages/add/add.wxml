@@ -13,7 +13,7 @@
 
       <i-input value="{{ duration }}" title="周期" />
       <!-- div -->
-      <slider min='1' max='100' step='1' value='30' backgroundColor='#ccc' activeColor='#1aad19' block-size='18' show-value='{{true}}' block-color='#1daa19' bindchange='changeDur' />
+      <slider min='1' max='100' step='1' value='{{duration}}' backgroundColor='#ccc' activeColor='#1aad19' block-size='18' show-value='{{true}}' block-color='#1daa19' bindchange='changeDur' />
     </view>
   </i-panel>
 
@@ -27,4 +27,8 @@
 
   <i-action-sheet id='visiblePhone' color='#1aad19' visible='{{ visiblePhone }}' actions='{{ arrPhone }}' show-cancel mask-closable='{{true}}' bind:click='selectPhone'  bind:cancel='cancel'/>
   <i-action-sheet id='visibleCard' color='#1aad19' visible='{{ visibleCard }}' actions='{{ arrCard }}' show-cancel mask-closable='{{true}}' bind:click='selectCard' bind:cancel='cancel'/>
+  
+  <i-modal visible="{{ visibleUpdate }}" bind:ok="update" bind:cancel="cancelUpdate">
+      <view>要修改已存在数据吗？</view>
+  </i-modal>
 </view>

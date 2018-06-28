@@ -4,6 +4,7 @@
     "i-panel":"../../dist/panel/index",
     "i-input":"../../dist/input/index",
     "i-button":"../../dist/button/index",
+    "i-modal":"../../dist/modal/index",
     "i-action-sheet":"../../dist/action-sheet/index"
   }
 }
