@@ -1,10 +1,10 @@
 {
   "pages": [
-    "pages/login/login",
-    "pages/register/register",
-    "pages/list/list",
-    "pages/add/add",
-    "pages/wallet/wallet"
+    "pages/login/index",
+    "pages/register/index",
+    "pages/list/index",
+    "pages/add/index",
+    "pages/wallet/index"
   ],
   "tabBar": {
     "backgroundColor": "#fefefe",
@@ -14,19 +14,19 @@
     "position":"bottom",
     "list": [
       {
-        "pagePath": "pages/list/list",
+        "pagePath": "pages/list/index",
         "text": "list",
         "iconPath":"imgs/list_g.png",
         "selectedIconPath":"imgs/list.png"
       },
       {
-        "pagePath": "pages/add/add",
+        "pagePath": "pages/add/index",
         "text": "add",
         "iconPath": "imgs/add_g.png",
         "selectedIconPath": "imgs/add.png"
       },
       {
-        "pagePath": "pages/wallet/wallet",
+        "pagePath": "pages/wallet/index",
         "text": "my",
         "iconPath": "imgs/wallet_g.png",
         "selectedIconPath": "imgs/wallet.png"

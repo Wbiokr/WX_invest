@@ -27,10 +27,10 @@ Page({
     console.log(e)
     switch(e.detail.index){
         case 0:
-          wx.switchTab({url:'../list/list'});
+          wx.switchTab({url:'../list/index'});
           break ;
         case 1:
-          wx.switchTab({url:'../add/add'});
+          wx.switchTab({url:'../add/index'});
           break ;
         default :
           break;
