@@ -29,6 +29,6 @@
   <i-action-sheet id='visibleCard' color='#1aad19' visible='{{ visibleCard }}' actions='{{ arrCard }}' show-cancel mask-closable='{{true}}' bind:click='selectCard' bind:cancel='cancel'/>
   
   <i-modal visible="{{ visibleUpdate }}" bind:ok="update" bind:cancel="cancelUpdate">
-      <view>要修改已存在数据吗？</view>
+      <view><text>要修改已存在数据吗？</text></view>
   </i-modal>
 </view>
