@@ -4,7 +4,8 @@
     "pages/register/index",
     "pages/list/index",
     "pages/add/index",
-    "pages/wallet/index"
+    "pages/wallet/index",
+    "pages/test/index"
   ],
   "tabBar": {
     "backgroundColor": "#fefefe",
@@ -28,6 +29,12 @@
       {
         "pagePath": "pages/wallet/index",
         "text": "my",
+        "iconPath": "imgs/wallet_g.png",
+        "selectedIconPath": "imgs/wallet.png"
+      },
+      {
+        "pagePath": "pages/test/index",
+        "text": "test",
         "iconPath": "imgs/wallet_g.png",
         "selectedIconPath": "imgs/wallet.png"
       }

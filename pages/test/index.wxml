@@ -1,0 +1,16 @@
+<view>
+  <swiper
+    indicator-dots='{{true}}'
+    indicator-color='#f00'
+    indicator-active-color='#fff'
+    autoplay='{{true}}'
+    current='2'
+    interval='1000'
+    duration='200'
+    circular='{{true}}'
+    vertical='{{false}}'
+    previous-margin='1px'
+    >
+
+  </swiper>
+</view>
