@@ -13,8 +13,10 @@
 	"compileType": "miniprogram",
 	"libVersion": "2.0.4",
 	"appid": "wx02d9dc6beb7f6892",
-	"projectname": "mini",
+	"projectname": "WX_invest",
 	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
 	"condition": {
 		"search": {
 			"current": -1,

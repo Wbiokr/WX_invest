@@ -1,6 +1,5 @@
 {
   "pages": [
-    "pages/login/index",
     "pages/register/index",
     "pages/list/index",
     "pages/add/index",
@@ -12,13 +11,13 @@
     "borderStyle": "black",
     "color": "#666",
     "selectedColor": "#6799e4",
-    "position":"bottom",
+    "position": "bottom",
     "list": [
       {
         "pagePath": "pages/list/index",
         "text": "list",
-        "iconPath":"imgs/list_g.png",
-        "selectedIconPath":"imgs/list.png"
+        "iconPath": "imgs/list_g.png",
+        "selectedIconPath": "imgs/list.png"
       },
       {
         "pagePath": "pages/add/index",
@@ -40,12 +39,11 @@
       }
     ]
   },
-  
   "window": {
-    "navigationBarBackgroundColor":"#ff3333",
+    "navigationBarBackgroundColor": "#f33",
     "navigationBarTitleText": "invest",
     "navigationBarTextStyle": "white",
-    "navigationStyle":"default",
+    "navigationStyle": "default",
     "backgroundColor": "#efefef",
     "backgroundTextStyle": "dark",
     "enablePullDownRefresh": false
@@ -56,5 +54,6 @@
     "uploadFile": 20000,
     "downloadFile": 20000
   },
-  "debug":false
+  "debug": false,
+  "sitemapLocation": "sitemap.json"
 }
