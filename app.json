@@ -1,59 +1,11 @@
 {
-  "pages": [
-    "pages/register/index",
-    "pages/list/index",
-    "pages/add/index",
-    "pages/wallet/index",
-    "pages/test/index"
+  "pages":[
+    "pages/index/index"
   ],
-  "tabBar": {
-    "backgroundColor": "#fefefe",
-    "borderStyle": "black",
-    "color": "#666",
-    "selectedColor": "#6799e4",
-    "position": "bottom",
-    "list": [
-      {
-        "pagePath": "pages/list/index",
-        "text": "list",
-        "iconPath": "imgs/list_g.png",
-        "selectedIconPath": "imgs/list.png"
-      },
-      {
-        "pagePath": "pages/add/index",
-        "text": "add",
-        "iconPath": "imgs/add_g.png",
-        "selectedIconPath": "imgs/add.png"
-      },
-      {
-        "pagePath": "pages/wallet/index",
-        "text": "my",
-        "iconPath": "imgs/wallet_g.png",
-        "selectedIconPath": "imgs/wallet.png"
-      },
-      {
-        "pagePath": "pages/test/index",
-        "text": "test",
-        "iconPath": "imgs/wallet_g.png",
-        "selectedIconPath": "imgs/wallet.png"
-      }
-    ]
-  },
-  "window": {
-    "navigationBarBackgroundColor": "#f33",
-    "navigationBarTitleText": "invest",
-    "navigationBarTextStyle": "white",
-    "navigationStyle": "default",
-    "backgroundColor": "#efefef",
-    "backgroundTextStyle": "dark",
-    "enablePullDownRefresh": false
-  },
-  "networkTimeout": {
-    "request": 2000000,
-    "connectSocket": 20000,
-    "uploadFile": 20000,
-    "downloadFile": 20000
-  },
-  "debug": false,
-  "sitemapLocation": "sitemap.json"
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarTitleText":"行九州",
+    "navigationBarTextStyle":"white",
+    "navigationBarBackgroundColor":"#f00"
+  }
 }
