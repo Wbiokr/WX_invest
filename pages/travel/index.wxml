@@ -1,0 +1,27 @@
+<view class='travel f-column' style='height: {{height}}px'>
+  <view class='title f-c'>
+    <text>中国<text class="num">34</text>个省区，<text class="num">661</text>个城市</text>
+  </view>
+  <view class='title f-c'>
+    <text>您已去过<text class="num">23</text>个省区，<text class="num">65</text>个城市</text>
+  </view>
+  <view class='title '>
+    <navigator class='-c' url="/pages/travel/map" hover-class="navigator-hover" open-type="navigate">
+      <icon class="" type="search" size="23" color="yellow" />
+      <!-- <text class="" selectable="false" space="false" decode="false">
+        编辑
+      </text> -->
+    </navigator>
+  </view>
+    
+  <view class='title f-c'>
+      
+    <image 
+      src='../../imgs/map_red.png'
+      show-menu-by-longpress='true'
+      lazy-load='true'
+    ></image>
+  </view>
+        
+</view>
+  

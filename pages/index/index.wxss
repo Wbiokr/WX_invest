@@ -1,0 +1,9 @@
+.index{
+  padding: 0 30rpx;  
+}
+
+.index .item {
+  /* background: #f0f; */
+  width: 100%;
+  margin-bottom: 20rpx;
+}

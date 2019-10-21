@@ -1,0 +1,17 @@
+.travel {
+  background: linear-gradient(#07c160, #00a1a0);
+  padding-bottom: 300rpx;
+  overflow: hidden;
+}
+.travel .title {
+  color: #fff;
+  padding-top: 50rpx;
+}
+.travel .title .num {
+  color: yellow;
+  font-weight: 600;
+  font-size: 56rpx;
+}
+.travel .title navigator {
+  padding-left: 100rpx;
+}

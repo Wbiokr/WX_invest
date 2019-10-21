@@ -1,0 +1,4 @@
+<view  class='{{selected?"active com-province f-c p-r":"com-province f-c p-r"}}'>
+    <text class="f-c">{{label}}</text>
+    <text wx:if='{{hasCity}}' class="p-a"></text>
+</view>

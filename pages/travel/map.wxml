@@ -1,0 +1,4 @@
+<view class='map'>
+  <ec-canvas id='map-echart' canvas-id='map-canvas' ec='{{ ec }}'></ec-canvas>
+</view>
+  

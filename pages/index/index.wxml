@@ -1,1 +1,15 @@
-<Text>Hello world</Text>
+<view class='index f-c f-column' style='height:{{height-200}}px'>
+  <button 
+    wx:for='{{tabs}}' 
+    wx:key='{{index}}' 
+    class="item" 
+    data-item='{{item}}'
+    type='primary'
+    plain='{{false}}'
+    bindtap='jumpToTarget'
+  >
+    {{item.name}}
+  </button>
+    
+</view>
+  

@@ -1,11 +1,17 @@
 {
-  "pages":[
-    "pages/index/index"
+  "pages": [
+    "pages/travel/city",
+    "pages/travel/map",
+    "pages/travel/index",
+    "pages/index/index",
+    "pages/photo/index",
+    "pages/music/index"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarTitleText":"行九州",
-    "navigationBarTextStyle":"white",
-    "navigationBarBackgroundColor":"#f00"
-  }
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarTitleText": "wbiokr",
+    "navigationBarTextStyle": "white",
+    "navigationBarBackgroundColor": "#07c160"
+  },
+  "sitemapLocation": "sitemap.json"
 }
